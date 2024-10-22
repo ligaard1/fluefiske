@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-title {
+  text-align: center;
+  color: #2e4d2c;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #4a7c59, #2e4d2c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.category-list, .mayfly-list, .baetis-list, .vaarflue-list, .ephemera-list, .heptagenia-list, .rhithrogena-list, .caenis-list, .ecdyonurus-list, .serratella-list, .ephemerella-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category-item, .mayfly-item, .baetis-item, .vaarflue-item, .ephemera-item, .heptagenia-item, .rhithrogena-item, .caenis-item, .ecdyonurus-item, .serratella-item, .ephemerella-item {
+  flex: 1 1 calc(50% - 20px);
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  height: 300px;
+}
+
+.category-item:hover, .mayfly-item:hover, .baetis-item:hover, .vaarflue-item:hover, .ephemera-item:hover, .heptagenia-item:hover, .rhithrogena-item:hover, .caenis-item:hover, .ecdyonurus-item:hover, .serratella-item:hover, .ephemerella-item:hover {
+  transform: scale(1.05);
+}
+
+.category-item img, .mayfly-item img, .baetis-item img, .vaarflue-item img, .ephemera-item img, .heptagenia-item img, .rhithrogena-item img, .caenis-item img, .ecdyonurus-item img, .serratella-item img, .ephemerella-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.category-item h3, .mayfly-item h3, .baetis-item h3, .vaarflue-item h3, .ephemera-item h3, .heptagenia-item h3, .rhithrogena-item h3, .caenis-item h3, .ecdyonurus-item h3, .serratella-item h3, .ephemerella-item h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(74, 124, 89, 0.8);
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+.mayfly-info, .baetis-info, .vaarflue-info, .ephemera-info, .heptagenia-info, .rhithrogena-info, .caenis-info, .ecdyonurus-info, .serratella-info, .ephemerella-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.mayfly-item:hover .mayfly-info, .baetis-item:hover .baetis-info, .vaarflue-item:hover .vaarflue-info, .ephemera-item:hover .ephemera-info, .heptagenia-item:hover .heptagenia-info, .rhithrogena-item:hover .rhithrogena-info, .caenis-item:hover .caenis-info, .ecdyonurus-item:hover .ecdyonurus-info, .serratella-item:hover .serratella-info, .ephemerella-item:hover .ephemerella-info {
+  opacity: 1;
+}
+
+.navigation {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4a7c59;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #2e4d2c;
+}
